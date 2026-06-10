@@ -3,3 +3,5 @@ out/
 .claude/
 .cursor/
 *.pdf
+*.csv
+sources.txt

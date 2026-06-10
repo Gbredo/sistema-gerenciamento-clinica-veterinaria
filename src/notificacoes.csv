@@ -1,4 +1,0 @@
-timestamp,tipo_evento,tutor,animal,veterinario,data_consulta
-2026-06-09T23:15:20.188776200,"AGENDAMENTO",Ana Souza,Mimi,Dra. Maria Lopes,2026-06-15T10:30
-2026-06-09T23:17:24.796489500,"AGENDAMENTO",Ana Souza,Mimi,Dra. Maria Lopes,2026-06-15T10:30
-2026-06-09T23:17:24.798915500,"CANCELAMENTO",Ana Souza,Mimi,"N/A",Cancelamento solicitado
