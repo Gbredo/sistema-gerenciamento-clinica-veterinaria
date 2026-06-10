@@ -17,20 +17,10 @@ public class ConsultaRepositorioMemoria implements PortaConsultaRepositorio {
 
     @Override
     public void salvar(Consulta consulta) {
-        Consulta paraArmazenar;
         if (consulta.getId() == null) {
-            paraArmazenar = new Consulta(
-                    proximoId++,
-                    consulta.getAnimal(),
-                    consulta.getVeterinario(),
-                    consulta.getData(),
-                    consulta.getHora(),
-                    consulta.getTipo()
-            );
-        } else {
-            paraArmazenar = consulta;
+            consulta.setId(proximoId++);
         }
-        armazenamento.put(paraArmazenar.getId(), paraArmazenar);
+        armazenamento.put(consulta.getId(), consulta);
     }
 
     @Override

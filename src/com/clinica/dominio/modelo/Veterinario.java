@@ -6,7 +6,7 @@ public class Veterinario {
 
     private enum SituacaoVeterinario { DISPONIVEL, OCUPADO }
 
-    private final Long id;
+    private Long id;
     private final String nome;
     private final String crmv;
     private final String especialidade;
@@ -42,6 +42,7 @@ public class Veterinario {
     }
 
     public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
     public String getNome() { return nome; }
     public String getCrmv() { return crmv; }
     public String getEspecialidade() { return especialidade; }

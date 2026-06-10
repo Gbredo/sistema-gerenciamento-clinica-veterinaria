@@ -17,20 +17,10 @@ public class AnimalRepositorioMemoria implements PortaAnimalRepositorio {
 
     @Override
     public void salvar(Animal animal) {
-        Animal paraArmazenar;
         if (animal.getId() == null) {
-            paraArmazenar = new Animal(
-                    proximoId++,
-                    animal.getNome(),
-                    animal.getEspecie(),
-                    animal.getRaca(),
-                    animal.getDataNascimento(),
-                    animal.getTutor()
-            );
-        } else {
-            paraArmazenar = animal;
+            animal.setId(proximoId++);
         }
-        armazenamento.put(paraArmazenar.getId(), paraArmazenar);
+        armazenamento.put(animal.getId(), animal);
     }
 
     @Override

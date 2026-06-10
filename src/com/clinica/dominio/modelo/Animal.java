@@ -5,7 +5,7 @@ import java.time.Period;
 
 public class Animal {
 
-    private final Long id;
+    private Long id;
     private String nome;
     private String especie;
     private String raca;
@@ -39,6 +39,7 @@ public class Animal {
     }
 
     public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
     public String getNome() { return nome; }
     public String getEspecie() { return especie; }
     public String getRaca() { return raca; }

@@ -16,18 +16,10 @@ public class VeterinarioRepositorioMemoria implements PortaVeterinarioRepositori
 
     @Override
     public void salvar(Veterinario vet) {
-        Veterinario paraArmazenar;
         if (vet.getId() == null) {
-            paraArmazenar = new Veterinario(
-                    proximoId++,
-                    vet.getNome(),
-                    vet.getCrmv(),
-                    vet.getEspecialidade()
-            );
-        } else {
-            paraArmazenar = vet;
+            vet.setId(proximoId++);
         }
-        armazenamento.put(paraArmazenar.getId(), paraArmazenar);
+        armazenamento.put(vet.getId(), vet);
     }
 
     @Override

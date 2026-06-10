@@ -5,7 +5,7 @@ import java.time.LocalTime;
 
 public class Consulta {
 
-    private final Long id;
+    private Long id;
     private final Animal animal;
     private final Veterinario veterinario;
     private final LocalDate data;
@@ -60,6 +60,7 @@ public class Consulta {
     }
 
     public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
     public Animal getAnimal() { return animal; }
     public Veterinario getVeterinario() { return veterinario; }
     public LocalDate getData() { return data; }
